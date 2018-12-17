@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+             xmlns:LottieAnimation="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="XF_GorillaInAction.Views.HelloGorilla">
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="BackgroundImage.png"
+                   Aspect="Fill" 
+                   VerticalOptions="StartAndExpand"/>
+
+            <Grid Margin="0,0,0,15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <LottieAnimation:AnimationView
+                        Grid.Row="0"
+                        Animation="yoga_girl_3.json"
+                        Loop="True"
+                        AutoPlay="True"
+                        HorizontalOptions="CenterAndExpand"/>
+
+
+                <StackLayout Grid.Row="1"
+                             HorizontalOptions="CenterAndExpand"
+                             Spacing="35"
+                             Margin="22,0,22,0">
+                    <Label Text="Practicar yoga genera beneficios 
+muchos más amplios de lo que puedes imaginar, 
+dale click en 'Go' y ha comenzar..."
+                               Style="{StaticResource lblWalkthrough}"/>
+                    <Button Text="GO"
+                            Style="{StaticResource btnWalkthrough}"
+                            HorizontalOptions="Center" />
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

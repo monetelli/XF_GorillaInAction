@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_GorillaInAction.App">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            
+            <!-- FONTS (OpenSans) -->
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <OnPlatform x:TypeArguments="x:String" x:Key="SemiBoldFont">
+                <On Platform="Android" Value="Fonts/OpenSans-SemiBold.ttf#OpenSans"/>
+                <On Platform="iOS" Value="Fonts/OpenSans-SemiBold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
+                <On Platform="Android" Value="Fonts/OpenSans-Regular.ttf#OpenSans"/>
+                <On Platform="iOS" Value="Fonts/OpenSans-Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ExtraBoldFont">
+                <On Platform="Android" Value="Fonts/OpenSans-ExtraBold.ttf#OpenSans"/>
+                <On Platform="iOS" Value="Fonts/OpenSans-ExtraBold" />
+            </OnPlatform>
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+            <!-- PART WALKTHROUGHS -->
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <!--LABELS-->
+            <!--======================================================================-->
+            <Style x:Key="lblWalkthrough" TargetType="Label">
+                <Setter Property="TextColor" Value="#1D1717"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontFamily" Value="{StaticResource SemiBoldFont}"/>
+            </Style>
+
+            <Style x:Key="lblGRWalkthrough" TargetType="Label">
+                <Setter Property="TextColor" Value="#F65656"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+            <!--======================================================================-->
+
+            <!--BUTTONS-->
+            <!--======================================================================-->
+            <Style x:Key="btnWalkthrough" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F65656"/>
+                <Setter Property="BorderRadius" Value="40"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="WidthRequest" Value="220"/>
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
+            </Style>
+            <!--======================================================================-->
+
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        </ResourceDictionary>
+        
+    </Application.Resources>
+    
+</Application>
