@@ -23,26 +23,20 @@
             <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
-            <!-- PART WALKTHROUGHS -->
+            <!-- PART HelloGorilla -->
             <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
             <!--LABELS-->
             <!--======================================================================-->
-            <Style x:Key="lblWalkthrough" TargetType="Label">
+            <Style x:Key="lblDescription" TargetType="Label">
                 <Setter Property="TextColor" Value="#1D1717"/>
                 <Setter Property="FontSize" Value="15"/>
                 <Setter Property="FontFamily" Value="{StaticResource SemiBoldFont}"/>
-            </Style>
-
-            <Style x:Key="lblGRWalkthrough" TargetType="Label">
-                <Setter Property="TextColor" Value="#F65656"/>
-                <Setter Property="FontSize" Value="17"/>
-                <Setter Property="FontFamily" Value="{StaticResource RegularFont}"/>
             </Style>
             <!--======================================================================-->
 
             <!--BUTTONS-->
             <!--======================================================================-->
-            <Style x:Key="btnWalkthrough" TargetType="Button">
+            <Style x:Key="btnGO" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#F65656"/>
                 <Setter Property="BorderRadius" Value="40"/>
                 <Setter Property="FontSize" Value="17"/>

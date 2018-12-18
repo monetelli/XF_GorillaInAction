@@ -4,27 +4,60 @@
              xmlns:Xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
              xmlns:LottieAnimation="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="XF_GorillaInAction.Views.HelloGorilla">
-
+    
+    <!-- ANIMACION CON XAMANIMATION-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <ContentPage.Resources>
+        <Xamanimation:StoryBoard x:Key="PageAnimation">
+            <Xamanimation:FadeInAnimation
+                Target="{x:Reference LottieYogaGirl}"
+                Duration="850"/>
+            <Xamanimation:FadeInAnimation
+                Target="{x:Reference lblDescription}"
+                Duration="1200"/>
+            <Xamanimation:HeartAnimation
+                Target="{x:Reference btnGO}"
+                Duration="900"
+                Easing="Linear"/>
+        </Xamanimation:StoryBoard>
+    </ContentPage.Resources>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    <!--EVENT TRIGGER DE AUTO ANIMACION-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <ContentPage.Triggers>
+        <EventTrigger Event="Appearing">
+            <Xamanimation:BeginAnimation 
+            Animation="{StaticResource PageAnimation}"/>
+        </EventTrigger>
+    </ContentPage.Triggers>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
     <ContentPage.Content>
 
         <Grid>
+
             <Image Source="BackgroundImage.png"
                    Aspect="Fill" 
                    VerticalOptions="StartAndExpand"/>
 
             <Grid Margin="0,0,0,15">
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
+                <!-- ANIMACION CON LOTTIE FORMS-->
+                <!--++++++++++++++++++++++++++++++++++++++++++-->
                 <LottieAnimation:AnimationView
                         Grid.Row="0"
                         Animation="yoga_girl_3.json"
                         Loop="True"
                         AutoPlay="True"
-                        HorizontalOptions="CenterAndExpand"/>
-
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="LottieYogaGirl"/>
+                <!--++++++++++++++++++++++++++++++++++++++++++-->
 
                 <StackLayout Grid.Row="1"
                              HorizontalOptions="CenterAndExpand"
@@ -33,16 +66,18 @@
                     <Label Text="Practicar yoga genera beneficios 
 muchos más amplios de lo que puedes imaginar, 
 dale click en 'Go' y ha comenzar..."
-                               Style="{StaticResource lblWalkthrough}"/>
+                               Style="{StaticResource lblDescription}"
+                           x:Name="lblDescription"/>
                     <Button Text="GO"
-                            Style="{StaticResource btnWalkthrough}"
-                            HorizontalOptions="Center" />
+                            Style="{StaticResource btnGO}"
+                            HorizontalOptions="Center"
+                            x:Name="btnGO"/>
                 </StackLayout>
 
             </Grid>
 
         </Grid>
-
+       
 
     </ContentPage.Content>
 
