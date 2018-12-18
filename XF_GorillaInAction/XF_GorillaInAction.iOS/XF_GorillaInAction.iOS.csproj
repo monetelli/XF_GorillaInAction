@@ -200,4 +200,13 @@
       <Name>XF_GorillaInAction</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BackgroundImage%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BackgroundImage%403x.png" />
+  </ItemGroup>
 </Project>
