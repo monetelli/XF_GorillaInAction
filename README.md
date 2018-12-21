@@ -2,6 +2,8 @@
 
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#Open-Source-Love) [![licence](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/monetelli/XF_GorillaInAction/blob/master/LICENSE.md)
 
+## Description
+
 ### Gorilla Player in Action
 
 Example of the video tutorial of "Part 0 UI / UX in Xamarin from 0 - Gorilla Player in action", where they will learn to:
