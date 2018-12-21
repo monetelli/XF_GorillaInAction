@@ -1,4 +1,7 @@
 # XF_GorillaInAction
+
+[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#want-to-contribute-pencil2) [![licence](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/monetelli/XF_GorillaInAction/blob/master/LICENSE)
+
 Example of the project to use Gorilla Player with Bindings, Styles and animations with Xamanimation and Lottie Forms.
 
 Watch this video for more details:
