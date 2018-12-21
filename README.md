@@ -10,3 +10,11 @@ Watch this video for more details:
 <a href="https://youtu.be/jzGK-J65n48">
 <img src="https://raw.githubusercontent.com/monetelli/XF_GorillaInAction/f738093a97ec56635159a6124ddcee3147a141fa/Images/GorillaPlayerInAction.png?raw=true" width="60%"/>
 </a>
+
+
+Installation of Gorilla Player in physical and virtual devices.
+<a href="https://www.youtube.com/watch?v=R-QOgODHy2I&t=">https://www.youtube.com/watch?v=R-QOgODHy2I&t=</a>
+
+<a href="https://www.youtube.com/watch?v=R-QOgODHy2I&t=">
+<img src="https://raw.githubusercontent.com/monetelli/XF_GorillaInAction/f738093a97ec56635159a6124ddcee3147a141fa/Images/GorillaPlayerInAction.png?raw=true" width="60%"/>
+</a>
