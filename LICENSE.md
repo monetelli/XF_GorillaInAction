@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018 XF_GorillaInAction - Daniel Monetelli L.
+Copyright (c) 2018 Daniel Monetelli L. (XF_GorillaInAction)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
